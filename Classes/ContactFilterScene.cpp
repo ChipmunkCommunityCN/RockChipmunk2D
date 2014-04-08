@@ -35,19 +35,19 @@ void ContactFilterScene::onEnter()
     
     PhysicsBody *ball1_body = ball1->getPhysicsBody();
     ball1_body->setCategoryBitmask(0x01);
-    ball1_body->setContactTestBitmask(0x00);
+    ball1_body->setContactTestBitmask(0x01);
     ball1_body->setCollisionBitmask(0x01);
     ball1_body->setGroup(0);
     
     PhysicsBody *ball2_body = ball2->getPhysicsBody();
     ball2_body->setCategoryBitmask(0x01);
-    ball2_body->setContactTestBitmask(0x00);
+    ball2_body->setContactTestBitmask(0x01);
     ball2_body->setCollisionBitmask(0x01);
     ball2_body->setGroup(0);
     
     PhysicsBody *box1_body = box1->getPhysicsBody();
-//    box1_body->setCategoryBitmask(0x02);
-//    box1_body->setCollisionBitmask(0x04);
+    box1_body->setCategoryBitmask(0x02);
+    box1_body->setCollisionBitmask(0x04);
     box1_body->setGroup(2);
     
     PhysicsBody *box2_body = box2->getPhysicsBody();

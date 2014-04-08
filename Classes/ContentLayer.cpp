@@ -11,6 +11,7 @@
 #include "PinJointScene.h"
 #include "SlideJointScene.h"
 #include "ContactFilterScene.h"
+#include "ColorMatchScene.h"
 
 struct DEMO
 {
@@ -23,6 +24,7 @@ struct DEMO
     { "03 了解PinJoint【销关节】", [](){ return PinJoint::createScene(); } },
     { "04 了解SlideJoint【滑动关节】", [](){ return SlideJoint::createScene(); } },
     { "05 了解碰撞过滤", [](){ return ContactFilterScene::createScene(); } },
+    { "06 简单的小游戏—ColorMatch", [](){ return ColorMatchScene::createScene(); } },
 };
 
 Scene* ContentLayer::createScene()

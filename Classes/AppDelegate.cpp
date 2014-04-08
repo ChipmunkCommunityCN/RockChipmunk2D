@@ -16,10 +16,10 @@ bool AppDelegate::applicationDidFinishLaunching() {
     auto director = Director::getInstance();
     auto glview = director->getOpenGLView();
     if(!glview) {
-        glview = GLView::create("My Game");
+        glview = GLView::create("ChipmunkCommunityCN-COCOS2DX");
         director->setOpenGLView(glview);
     }
-
+    
     // turn on display FPS
     director->setDisplayStats(true);
 
