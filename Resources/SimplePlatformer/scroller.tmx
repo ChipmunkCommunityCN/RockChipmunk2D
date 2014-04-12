@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="60" height="20" tilewidth="16" tileheight="16">
+ <tileset firstgid="1" name="blocks" tilewidth="16" tileheight="16">
+  <image source="blocks.png" width="64" height="64"/>
+  <tile id="0">
+   <properties>
+    <property name="collidable" value="true"/>
+   </properties>
+  </tile>
+  <tile id="1">
+   <properties>
+    <property name="collidable" value="true"/>
+   </properties>
+  </tile>
+  <tile id="2">
+   <properties>
+    <property name="collidable" value="true"/>
+   </properties>
+  </tile>
+  <tile id="3">
+   <properties>
+    <property name="collidable" value="true"/>
+   </properties>
+  </tile>
+  <tile id="4">
+   <properties>
+    <property name="collidable" value="true"/>
+   </properties>
+  </tile>
+  <tile id="5">
+   <properties>
+    <property name="collidable" value="true"/>
+   </properties>
+  </tile>
+  <tile id="6">
+   <properties>
+    <property name="collidable" value="true"/>
+   </properties>
+  </tile>
+  <tile id="7">
+   <properties>
+    <property name="collidable" value="true"/>
+   </properties>
+  </tile>
+  <tile id="8">
+   <properties>
+    <property name="collidable" value="true"/>
+   </properties>
+  </tile>
+  <tile id="9">
+   <properties>
+    <property name="collidable" value="true"/>
+   </properties>
+  </tile>
+  <tile id="10">
+   <properties>
+    <property name="collidable" value="false"/>
+   </properties>
+  </tile>
+  <tile id="11">
+   <properties>
+    <property name="collidable" value="false"/>
+   </properties>
+  </tile>
+  <tile id="12">
+   <properties>
+    <property name="collidable" value="true"/>
+   </properties>
+  </tile>
+  <tile id="13">
+   <properties>
+    <property name="collidable" value="true"/>
+   </properties>
+  </tile>
+  <tile id="14">
+   <properties>
+    <property name="collidable" value="false"/>
+   </properties>
+  </tile>
+  <tile id="15">
+   <properties>
+    <property name="collidable" value="false"/>
+   </properties>
+  </tile>
+ </tileset>
+ <layer name="edgeLayer" width="60" height="20">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA+2W3QqDMAyFdc5Np/t5/6ddbgKhyEk1oW2gHxzOTSimx4QOgw8baRdurWudL+kn3FrXOj1fW11UJtJdqVlJrwOPyJO0KDVv0ufAS6HN2Ei6CUfk5MvUylWbsZn0EI7IyZcpnSvjkS/nmjoicr6ca+qIEvmOAeTd79l6bUd5Urtf9A/n7uIzc1q7X0TuLk7nFL0t5fdNDvK+vyugt2Xar5UW+kX0fv3Oa5Her/28KPLYz3/ZFJHvwBIAAA==
+  </data>
+ </layer>
+</map>

@@ -33,6 +33,7 @@ public:
     void onTouchEnded(Touch* touch, Event* event);    
 protected:
     PhysicsWorld* _world;
+    Node* _wallNode;
     std::unordered_map<int, Node*> _mouses;
 };
 

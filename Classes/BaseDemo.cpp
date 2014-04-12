@@ -38,10 +38,10 @@ bool BaseDemo::init()
     
     //加入封闭的盒子，用作墙壁
     auto body = PhysicsBody::createEdgeBox(size, PHYSICSBODY_MATERIAL_DEFAULT, 3);
-    auto edgeNode = Node::create();
-    edgeNode->setPosition(size.width/2, size.height/2);
-    edgeNode->setPhysicsBody(body);
-    this->addChild(edgeNode);
+    _wallNode = Node::create();
+    _wallNode->setPosition(size.width/2, size.height/2);
+    _wallNode->setPhysicsBody(body);
+    this->addChild(_wallNode);
     
     auto backMenuItem = MenuItemImage::create("backNormal.png", "backSelected.png", CC_CALLBACK_1(BaseDemo::backCallback, this));
     auto restartMenuItem = MenuItemImage::create("refreshNormal.png", "refreshSelected.png", CC_CALLBACK_1(BaseDemo::restartCallback, this));

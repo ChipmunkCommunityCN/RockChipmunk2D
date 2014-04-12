@@ -79,9 +79,6 @@ Ball* ColorMatchScene::addBall()
 {
     Ball* ball = Ball::createBall();
     this->addChild(ball);
-    
-
-
     ball->setTag(BALL_TAG);
     
     auto bornPosX = CCRANDOM_0_1() * (WALL_SIZE.width - ball->getRadius() * 2) + WALL_ORIGIN.x + ball->getRadius();
@@ -106,7 +103,6 @@ void ColorMatchScene::removeBall(Ball *ball)
     CocosDenshion::SimpleAudioEngine::getInstance()->playEffect("pop.wav");
 }
 
-const float TICKS_PER_SECOND = 120.0f;
 void ColorMatchScene::update(float delta)
 {
     if (_ticks % 6 == 0 && _balls.size() < 70)

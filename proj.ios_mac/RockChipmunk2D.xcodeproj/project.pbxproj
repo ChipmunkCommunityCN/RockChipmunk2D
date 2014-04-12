@@ -88,6 +88,14 @@
 		8947CA2618F2A2020007847E /* thump.wav in Resources */ = {isa = PBXBuildFile; fileRef = 8947CA1018F2A2020007847E /* thump.wav */; };
 		8947CA2918F2BE320007847E /* Ball.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8947CA2718F2BE320007847E /* Ball.cpp */; };
 		8947CA2A18F2BE320007847E /* Ball.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8947CA2718F2BE320007847E /* Ball.cpp */; };
+		8947CA5618F819A10007847E /* blocks.png in Resources */ = {isa = PBXBuildFile; fileRef = 8947CA5418F819A10007847E /* blocks.png */; };
+		8947CA5718F819A10007847E /* blocks.png in Resources */ = {isa = PBXBuildFile; fileRef = 8947CA5418F819A10007847E /* blocks.png */; };
+		8947CA5818F819A10007847E /* scroller.tmx in Resources */ = {isa = PBXBuildFile; fileRef = 8947CA5518F819A10007847E /* scroller.tmx */; };
+		8947CA5918F819A10007847E /* scroller.tmx in Resources */ = {isa = PBXBuildFile; fileRef = 8947CA5518F819A10007847E /* scroller.tmx */; };
+		8947CA6418F819E80007847E /* SimplePlatformerScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8947CA5E18F819E80007847E /* SimplePlatformerScene.cpp */; };
+		8947CA6518F819E80007847E /* SimplePlatformerScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8947CA5E18F819E80007847E /* SimplePlatformerScene.cpp */; };
+		8947CA6618F819E80007847E /* Player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8947CA6018F819E80007847E /* Player.cpp */; };
+		8947CA6718F819E80007847E /* Player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8947CA6018F819E80007847E /* Player.cpp */; };
 		89CC24EF18EE9ECA00EDEFB8 /* BaseDemo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 89CC24E918EE9ECA00EDEFB8 /* BaseDemo.cpp */; };
 		89CC24F018EE9ECA00EDEFB8 /* BaseDemo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 89CC24E918EE9ECA00EDEFB8 /* BaseDemo.cpp */; };
 		89CC24F118EE9ECA00EDEFB8 /* ContactFilterScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 89CC24EB18EE9ECA00EDEFB8 /* ContactFilterScene.cpp */; };
@@ -361,6 +369,12 @@
 		8947CA1018F2A2020007847E /* thump.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = thump.wav; sourceTree = "<group>"; };
 		8947CA2718F2BE320007847E /* Ball.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Ball.cpp; sourceTree = "<group>"; };
 		8947CA2818F2BE320007847E /* Ball.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ball.h; sourceTree = "<group>"; };
+		8947CA5418F819A10007847E /* blocks.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blocks.png; sourceTree = "<group>"; };
+		8947CA5518F819A10007847E /* scroller.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = scroller.tmx; sourceTree = "<group>"; };
+		8947CA5E18F819E80007847E /* SimplePlatformerScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SimplePlatformerScene.cpp; sourceTree = "<group>"; };
+		8947CA5F18F819E80007847E /* SimplePlatformerScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimplePlatformerScene.h; sourceTree = "<group>"; };
+		8947CA6018F819E80007847E /* Player.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Player.cpp; sourceTree = "<group>"; };
+		8947CA6118F819E80007847E /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
 		89CC24E918EE9ECA00EDEFB8 /* BaseDemo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = BaseDemo.cpp; path = ../Classes/BaseDemo.cpp; sourceTree = "<group>"; };
 		89CC24EA18EE9ECA00EDEFB8 /* BaseDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BaseDemo.h; path = ../Classes/BaseDemo.h; sourceTree = "<group>"; };
 		89CC24EB18EE9ECA00EDEFB8 /* ContactFilterScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ContactFilterScene.cpp; path = ../Classes/ContactFilterScene.cpp; sourceTree = "<group>"; };
@@ -475,6 +489,8 @@
 		15AA9C4015B7EC450033D6C2 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				8947CA5A18F819E80007847E /* SimplePlatformer */,
+				8947CA4D18F6CE0B0007847E /* QueryDemo */,
 				89CC24F918EE9ED200EDEFB8 /* JointsDemo */,
 				8947C9FE18F2A08A0007847E /* ColorMatch */,
 				89CC24F718EE9ED200EDEFB8 /* IntroScene.cpp */,
@@ -608,6 +624,7 @@
 		78C7DDAA14EBA5050085D0C2 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				8947CA5318F819A10007847E /* SimplePlatformer */,
 				8947CA0518F2A2020007847E /* ColorMatch */,
 				89CC250D18EE9EDE00EDEFB8 /* fonts */,
 				89CC253118EE9EE700EDEFB8 /* backNormal.png */,
@@ -667,6 +684,35 @@
 				8947CA1018F2A2020007847E /* thump.wav */,
 			);
 			path = ColorMatch;
+			sourceTree = "<group>";
+		};
+		8947CA4D18F6CE0B0007847E /* QueryDemo */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = QueryDemo;
+			path = ../Classes/QueryDemo;
+			sourceTree = "<group>";
+		};
+		8947CA5318F819A10007847E /* SimplePlatformer */ = {
+			isa = PBXGroup;
+			children = (
+				8947CA5418F819A10007847E /* blocks.png */,
+				8947CA5518F819A10007847E /* scroller.tmx */,
+			);
+			path = SimplePlatformer;
+			sourceTree = "<group>";
+		};
+		8947CA5A18F819E80007847E /* SimplePlatformer */ = {
+			isa = PBXGroup;
+			children = (
+				8947CA5E18F819E80007847E /* SimplePlatformerScene.cpp */,
+				8947CA5F18F819E80007847E /* SimplePlatformerScene.h */,
+				8947CA6018F819E80007847E /* Player.cpp */,
+				8947CA6118F819E80007847E /* Player.h */,
+			);
+			name = SimplePlatformer;
+			path = ../Classes/SimplePlatformer;
 			sourceTree = "<group>";
 		};
 		89CC24F918EE9ED200EDEFB8 /* JointsDemo */ = {
@@ -887,6 +933,7 @@
 				8947CA1B18F2A2020007847E /* ball_5.png in Resources */,
 				89CC254B18EE9EE700EDEFB8 /* ChipmunkCN_logo_200x200.png in Resources */,
 				8947CA1118F2A2020007847E /* ball_0.png in Resources */,
+				8947CA5618F819A10007847E /* blocks.png in Resources */,
 				5087E78217EB970100C73F5D /* Icon-144.png in Resources */,
 				8947CA1318F2A2020007847E /* ball_1.png in Resources */,
 				8947CA2318F2A2020007847E /* pop.wav in Resources */,
@@ -903,6 +950,7 @@
 				50EF629717ECD46A001EB2F8 /* Icon-58.png in Resources */,
 				89CC252D18EE9EDE00EDEFB8 /* YellowSquare.png in Resources */,
 				8947CA1518F2A2020007847E /* ball_2.png in Resources */,
+				8947CA5818F819A10007847E /* scroller.tmx in Resources */,
 				89CC254318EE9EE700EDEFB8 /* cai1.lua in Resources */,
 				89CC252318EE9EDE00EDEFB8 /* refreshSelected.png in Resources */,
 			);
@@ -912,6 +960,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8947CA5918F819A10007847E /* scroller.tmx in Resources */,
 				8947CA1218F2A2020007847E /* ball_0.png in Resources */,
 				89CC252018EE9EDE00EDEFB8 /* goSelected.png in Resources */,
 				8947CA1618F2A2020007847E /* ball_2.png in Resources */,
@@ -923,6 +972,7 @@
 				89CC254C18EE9EE700EDEFB8 /* ChipmunkCN_logo_200x200.png in Resources */,
 				5087E75317EB910900C73F5D /* CloseNormal.png in Resources */,
 				89CC251E18EE9EDE00EDEFB8 /* goNormal.png in Resources */,
+				8947CA5718F819A10007847E /* blocks.png in Resources */,
 				503AE0F817EB97AB00D1A890 /* Icon.icns in Resources */,
 				89CC252418EE9EDE00EDEFB8 /* refreshSelected.png in Resources */,
 				8947CA1C18F2A2020007847E /* ball_5.png in Resources */,
@@ -960,6 +1010,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				89CC250218EE9ED200EDEFB8 /* IntroScene.cpp in Sources */,
+				8947CA6618F819E80007847E /* Player.cpp in Sources */,
+				8947CA6418F819E80007847E /* SimplePlatformerScene.cpp in Sources */,
 				89CC250418EE9ED200EDEFB8 /* PinJointScene.cpp in Sources */,
 				8947CA0318F2A0B30007847E /* ColorMatchScene.cpp in Sources */,
 				503AE10017EB989F00D1A890 /* AppController.mm in Sources */,
@@ -988,8 +1040,10 @@
 				8947CA2A18F2BE320007847E /* Ball.cpp in Sources */,
 				89CC250518EE9ED200EDEFB8 /* PinJointScene.cpp in Sources */,
 				5087E75817EB910900C73F5D /* HelloWorldScene.cpp in Sources */,
+				8947CA6718F819E80007847E /* Player.cpp in Sources */,
 				89CC24F418EE9ECA00EDEFB8 /* ContentLayer.cpp in Sources */,
 				89CC24F218EE9ECA00EDEFB8 /* ContactFilterScene.cpp in Sources */,
+				8947CA6518F819E80007847E /* SimplePlatformerScene.cpp in Sources */,
 				89CC250B18EE9ED200EDEFB8 /* VisibleRect.cpp in Sources */,
 				503AE10517EB98FF00D1A890 /* main.cpp in Sources */,
 				8947CA0418F2A0B30007847E /* ColorMatchScene.cpp in Sources */,

@@ -12,6 +12,7 @@
 #include "SlideJointScene.h"
 #include "ContactFilterScene.h"
 #include "ColorMatchScene.h"
+#include "SimplePlatformerScene.h"
 
 struct DEMO
 {
@@ -25,6 +26,7 @@ struct DEMO
     { "04 了解SlideJoint【滑动关节】", [](){ return SlideJoint::createScene(); } },
     { "05 了解碰撞过滤", [](){ return ContactFilterScene::createScene(); } },
     { "06 简单的小游戏—ColorMatch", [](){ return ColorMatchScene::createScene(); } },
+    { "07 简单的小游戏—SimplePlatformer", [](){ return SimplePlatformerScene::createScene(); } },
 };
 
 Scene* ContentLayer::createScene()
