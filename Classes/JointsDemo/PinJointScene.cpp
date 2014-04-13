@@ -39,7 +39,7 @@ void PinJoint::onEnter()
     
     Sprite* box = nullptr;
     PhysicsJointDistance* chainJoint_distance = nullptr;
-    int chainLen = 15;
+    int chainLen = 10;
     Vector<Sprite*> boxes;
     for (int i = 0; i < chainLen; i++) {
         box = createBox(Point(500 + 40 * i, 600), Size(20, 10));

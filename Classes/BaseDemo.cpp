@@ -65,7 +65,7 @@ void BaseDemo::onEnter()
 {
     Layer::onEnter();
     
-    auto demo_info_label = LabelTTF::create(demo_info(), "Helvetica", 20, Size(500, 200), TextHAlignment::LEFT);
+    auto demo_info_label = Label::create(demo_info(), "Helvetica", 25, Size(500, 200), TextHAlignment::LEFT);
     this->addChild(demo_info_label);
     demo_info_label->setAnchorPoint(Point(0.0f, 1.0f));
     demo_info_label->setColor(Color3B(255, 255, 255));
@@ -146,9 +146,30 @@ Sprite* BaseDemo::createBox(const Point& point, Size size, PhysicsMaterial mater
     auto body = PhysicsBody::createBox(size);
     box->setPhysicsBody(body);
     box->setPosition(point);
+    box->setRotation(CCRANDOM_0_1()* 360);
     body->setTag(DRAG_BODYS_TAG);
     
     return box;
+}
+
+Sprite* BaseDemo::createTriangle(const Point& point, Size size, PhysicsMaterial material)
+{
+    Sprite* triangle = Sprite::create();
+    
+    Point verts[] =
+    {
+        Point(0, size.height/2),
+        Point(size.width/2, -size.height/2),
+        Point(-size.width/2, -size.height/2)
+    };
+    
+    auto body = PhysicsBody::createPolygon(verts, 3, material);
+    triangle->setPhysicsBody(body);
+    triangle->setPosition(point);
+    triangle->setRotation(CCRANDOM_0_1()* 360);
+    triangle->setTag(DRAG_BODYS_TAG);
+    
+    return triangle;
 }
 
 std::string BaseDemo::demo_info() const

@@ -27,10 +27,11 @@ public:
     
     Sprite* createBall(const Point& point, float radius, PhysicsMaterial material = PHYSICSBODY_MATERIAL_DEFAULT);
     Sprite* createBox(const Point& point, Size size, PhysicsMaterial material = PHYSICSBODY_MATERIAL_DEFAULT);
+    Sprite* createTriangle(const Point& point, Size size, PhysicsMaterial material = PHYSICSBODY_MATERIAL_DEFAULT);
     
-    bool onTouchBegan(Touch* touch, Event* event);
-    void onTouchMoved(Touch* touch, Event* event);
-    void onTouchEnded(Touch* touch, Event* event);    
+    virtual bool onTouchBegan(Touch* touch, Event* event);
+    virtual void onTouchMoved(Touch* touch, Event* event);
+    virtual void onTouchEnded(Touch* touch, Event* event);
 protected:
     PhysicsWorld* _world;
     Node* _wallNode;
