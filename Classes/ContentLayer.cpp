@@ -13,6 +13,7 @@
 #include "ContactFilterScene.h"
 #include "ColorMatchScene.h"
 #include "SimplePlatformerScene.h"
+#include "PointQueryScene.h"
 
 struct DEMO
 {
@@ -27,6 +28,7 @@ struct DEMO
     { "05 了解碰撞过滤", [](){ return ContactFilterScene::createScene(); } },
     { "06 简单的小游戏—ColorMatch", [](){ return ColorMatchScene::createScene(); } },
     { "07 简单的小游戏—SimplePlatformer", [](){ return SimplePlatformerScene::createScene(); } },
+    { "08 点查询", [](){ return PointQueryScene::createScene(); } },
 };
 
 Scene* ContentLayer::createScene()

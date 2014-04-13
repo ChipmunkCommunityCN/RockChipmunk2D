@@ -62,6 +62,8 @@
 		50EF629917ECD46A001EB2F8 /* Icon-100.png in Resources */ = {isa = PBXBuildFile; fileRef = 50EF629517ECD46A001EB2F8 /* Icon-100.png */; };
 		50EF62A217ECD613001EB2F8 /* Icon-29.png in Resources */ = {isa = PBXBuildFile; fileRef = 50EF62A017ECD613001EB2F8 /* Icon-29.png */; };
 		50EF62A317ECD613001EB2F8 /* Icon-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 50EF62A117ECD613001EB2F8 /* Icon-50.png */; };
+		893313F118FAB14200EA877C /* PointQueryScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 893313EF18FAB14200EA877C /* PointQueryScene.cpp */; };
+		893313F218FAB14200EA877C /* PointQueryScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 893313EF18FAB14200EA877C /* PointQueryScene.cpp */; };
 		8947CA0318F2A0B30007847E /* ColorMatchScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8947CA0118F2A0B30007847E /* ColorMatchScene.cpp */; };
 		8947CA0418F2A0B30007847E /* ColorMatchScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8947CA0118F2A0B30007847E /* ColorMatchScene.cpp */; };
 		8947CA1118F2A2020007847E /* ball_0.png in Resources */ = {isa = PBXBuildFile; fileRef = 8947CA0618F2A2020007847E /* ball_0.png */; };
@@ -354,6 +356,8 @@
 		50EF629517ECD46A001EB2F8 /* Icon-100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-100.png"; sourceTree = "<group>"; };
 		50EF62A017ECD613001EB2F8 /* Icon-29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-29.png"; sourceTree = "<group>"; };
 		50EF62A117ECD613001EB2F8 /* Icon-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-50.png"; sourceTree = "<group>"; };
+		893313EF18FAB14200EA877C /* PointQueryScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PointQueryScene.cpp; sourceTree = "<group>"; };
+		893313F018FAB14200EA877C /* PointQueryScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PointQueryScene.h; sourceTree = "<group>"; };
 		8947CA0118F2A0B30007847E /* ColorMatchScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ColorMatchScene.cpp; sourceTree = "<group>"; };
 		8947CA0218F2A0B30007847E /* ColorMatchScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorMatchScene.h; sourceTree = "<group>"; };
 		8947CA0618F2A2020007847E /* ball_0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ball_0.png; sourceTree = "<group>"; };
@@ -689,6 +693,8 @@
 		8947CA4D18F6CE0B0007847E /* QueryDemo */ = {
 			isa = PBXGroup;
 			children = (
+				893313EF18FAB14200EA877C /* PointQueryScene.cpp */,
+				893313F018FAB14200EA877C /* PointQueryScene.h */,
 			);
 			name = QueryDemo;
 			path = ../Classes/QueryDemo;
@@ -1023,6 +1029,7 @@
 				8947CA2918F2BE320007847E /* Ball.cpp in Sources */,
 				503AE10217EB989F00D1A890 /* RootViewController.mm in Sources */,
 				1AFAF8B716D35DE700DB1158 /* AppDelegate.cpp in Sources */,
+				893313F118FAB14200EA877C /* PointQueryScene.cpp in Sources */,
 				503AE10117EB989F00D1A890 /* main.m in Sources */,
 				89CC250818EE9ED200EDEFB8 /* RollingBall.cpp in Sources */,
 				1AFAF8B816D35DE700DB1158 /* HelloWorldScene.cpp in Sources */,
@@ -1035,6 +1042,7 @@
 			files = (
 				89CC250918EE9ED200EDEFB8 /* RollingBall.cpp in Sources */,
 				5087E75717EB910900C73F5D /* AppDelegate.cpp in Sources */,
+				893313F218FAB14200EA877C /* PointQueryScene.cpp in Sources */,
 				89CC250318EE9ED200EDEFB8 /* IntroScene.cpp in Sources */,
 				89CC24F018EE9ECA00EDEFB8 /* BaseDemo.cpp in Sources */,
 				8947CA2A18F2BE320007847E /* Ball.cpp in Sources */,
