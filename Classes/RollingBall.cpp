@@ -31,7 +31,7 @@ RollingBall::~RollingBall()
 
 bool RollingBall::init()
 {
-    if(!Layer::init())
+    if(!BaseDemo::init())
     {
         return false;
     }
@@ -90,17 +90,6 @@ bool RollingBall::init()
     _verts_cai1[19] = Point(-31.7f, 40.6f);
     _verts_cai1[20] = Point(-21.2f, 56.7f);
     _verts_cai1[21] = Point(-2.3f, 57.1f);
-    
-
-    
-    
-
-
-    
-    auto touchListener = EventListenerTouchOneByOne::create();
-    touchListener->onTouchBegan = CC_CALLBACK_2(RollingBall::onTouchBegan, this);
-    touchListener->onTouchEnded = CC_CALLBACK_2(RollingBall::onTouchEnded, this);
-    _eventDispatcher->addEventListenerWithSceneGraphPriority(touchListener, this);
     
     //碰撞检测回调
     auto contactListener = EventListenerPhysicsContact::create();
@@ -176,6 +165,16 @@ void RollingBall::addNewSpriteAtPosition(Point& location)
     sprite->setPhysicsBody(_body);
     sprite->setPosition(location);
     this->addChild(sprite);
+}
+
+std::string RollingBall::demo_info() const
+{
+    return "点击屏幕看看吧:) \n顶点数据建构刚体";
+}
+
+void RollingBall::restartCallback(Ref *pSender)
+{
+    Director::getInstance()->replaceScene(RollingBall::createScene());
 }
 
 void RollingBall::menuCloseCallBack(Ref *pSender)

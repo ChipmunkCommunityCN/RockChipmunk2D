@@ -8,12 +8,14 @@
 
 #include "ContentLayer.h"
 #include "HelloWorldScene.h"
+#include "RollingBall.h"
 #include "PinJointScene.h"
 #include "SlideJointScene.h"
 #include "ContactFilterScene.h"
 #include "ColorMatchScene.h"
 #include "SimplePlatformerScene.h"
 #include "PointQueryScene.h"
+#include "HitMeScene.h"
 
 struct DEMO
 {
@@ -22,13 +24,14 @@ struct DEMO
 }demos[] =
 {
     { "01 构建一个物理世界", [](){ return HelloWorld::createScene(); } },
-    { "02 构建一个物理世界2", [](){ return HelloWorld::createScene(); } },
+    { "02 构建一个物理世界2", [](){ return RollingBall::createScene(); } },
     { "03 了解PinJoint【销关节】", [](){ return PinJoint::createScene(); } },
     { "04 了解SlideJoint【滑动关节】", [](){ return SlideJoint::createScene(); } },
     { "05 了解碰撞过滤", [](){ return ContactFilterScene::createScene(); } },
     { "06 简单的小游戏—ColorMatch", [](){ return ColorMatchScene::createScene(); } },
     { "07 简单的小游戏—SimplePlatformer", [](){ return SimplePlatformerScene::createScene(); } },
     { "08 点查询", [](){ return PointQueryScene::createScene(); } },
+    { "09 简单的小游戏-HitMe", [](){ return HitMeScene::createScene(); } },
 };
 
 Scene* ContentLayer::createScene()
@@ -50,7 +53,7 @@ bool ContentLayer::init()
     auto bg = LayerColor::create(Color4B(255, 255, 255, 255), visibleSize.width, visibleSize.height);
     this->addChild(bg);
     
-    TableView* tableView = TableView::create(this, Size(500, 500));
+    TableView* tableView = TableView::create(this, Size(visibleSize.width, 500));
     tableView->setDirection(ScrollView::Direction::VERTICAL);
     tableView->setVerticalFillOrder(TableView::VerticalFillOrder::TOP_DOWN);
     tableView->setPosition(Point(visibleSize.width/6, visibleSize.height/6));
