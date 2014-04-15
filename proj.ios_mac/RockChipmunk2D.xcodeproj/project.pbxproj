@@ -98,6 +98,10 @@
 		8947CA6518F819E80007847E /* SimplePlatformerScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8947CA5E18F819E80007847E /* SimplePlatformerScene.cpp */; };
 		8947CA6618F819E80007847E /* Player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8947CA6018F819E80007847E /* Player.cpp */; };
 		8947CA6718F819E80007847E /* Player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8947CA6018F819E80007847E /* Player.cpp */; };
+		89BC216718FCF39D00C0ED51 /* HitMeScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 89BC216518FCF39D00C0ED51 /* HitMeScene.cpp */; };
+		89BC216818FCF39D00C0ED51 /* HitMeScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 89BC216518FCF39D00C0ED51 /* HitMeScene.cpp */; };
+		89BC216B18FCF52000C0ED51 /* hit_me.png in Resources */ = {isa = PBXBuildFile; fileRef = 89BC216A18FCF52000C0ED51 /* hit_me.png */; };
+		89BC216C18FCF52000C0ED51 /* hit_me.png in Resources */ = {isa = PBXBuildFile; fileRef = 89BC216A18FCF52000C0ED51 /* hit_me.png */; };
 		89CC24EF18EE9ECA00EDEFB8 /* BaseDemo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 89CC24E918EE9ECA00EDEFB8 /* BaseDemo.cpp */; };
 		89CC24F018EE9ECA00EDEFB8 /* BaseDemo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 89CC24E918EE9ECA00EDEFB8 /* BaseDemo.cpp */; };
 		89CC24F118EE9ECA00EDEFB8 /* ContactFilterScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 89CC24EB18EE9ECA00EDEFB8 /* ContactFilterScene.cpp */; };
@@ -379,6 +383,9 @@
 		8947CA5F18F819E80007847E /* SimplePlatformerScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimplePlatformerScene.h; sourceTree = "<group>"; };
 		8947CA6018F819E80007847E /* Player.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Player.cpp; sourceTree = "<group>"; };
 		8947CA6118F819E80007847E /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
+		89BC216518FCF39D00C0ED51 /* HitMeScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HitMeScene.cpp; sourceTree = "<group>"; };
+		89BC216618FCF39D00C0ED51 /* HitMeScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HitMeScene.h; sourceTree = "<group>"; };
+		89BC216A18FCF52000C0ED51 /* hit_me.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hit_me.png; sourceTree = "<group>"; };
 		89CC24E918EE9ECA00EDEFB8 /* BaseDemo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = BaseDemo.cpp; path = ../Classes/BaseDemo.cpp; sourceTree = "<group>"; };
 		89CC24EA18EE9ECA00EDEFB8 /* BaseDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BaseDemo.h; path = ../Classes/BaseDemo.h; sourceTree = "<group>"; };
 		89CC24EB18EE9ECA00EDEFB8 /* ContactFilterScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ContactFilterScene.cpp; path = ../Classes/ContactFilterScene.cpp; sourceTree = "<group>"; };
@@ -493,6 +500,7 @@
 		15AA9C4015B7EC450033D6C2 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				89BC216218FCF38900C0ED51 /* HitMe */,
 				8947CA5A18F819E80007847E /* SimplePlatformer */,
 				8947CA4D18F6CE0B0007847E /* QueryDemo */,
 				89CC24F918EE9ED200EDEFB8 /* JointsDemo */,
@@ -628,6 +636,7 @@
 		78C7DDAA14EBA5050085D0C2 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				89BC216918FCF52000C0ED51 /* HitMe */,
 				8947CA5318F819A10007847E /* SimplePlatformer */,
 				8947CA0518F2A2020007847E /* ColorMatch */,
 				89CC250D18EE9EDE00EDEFB8 /* fonts */,
@@ -719,6 +728,24 @@
 			);
 			name = SimplePlatformer;
 			path = ../Classes/SimplePlatformer;
+			sourceTree = "<group>";
+		};
+		89BC216218FCF38900C0ED51 /* HitMe */ = {
+			isa = PBXGroup;
+			children = (
+				89BC216518FCF39D00C0ED51 /* HitMeScene.cpp */,
+				89BC216618FCF39D00C0ED51 /* HitMeScene.h */,
+			);
+			name = HitMe;
+			path = ../Classes/HitMe;
+			sourceTree = "<group>";
+		};
+		89BC216918FCF52000C0ED51 /* HitMe */ = {
+			isa = PBXGroup;
+			children = (
+				89BC216A18FCF52000C0ED51 /* hit_me.png */,
+			);
+			path = HitMe;
 			sourceTree = "<group>";
 		};
 		89CC24F918EE9ED200EDEFB8 /* JointsDemo */ = {
@@ -951,6 +978,7 @@
 				5087E77E17EB970100C73F5D /* Default.png in Resources */,
 				89CC253F18EE9EE700EDEFB8 /* ball.png in Resources */,
 				89CC254718EE9EE700EDEFB8 /* cai1.png in Resources */,
+				89BC216B18FCF52000C0ED51 /* hit_me.png in Resources */,
 				89CC253B18EE9EE700EDEFB8 /* backNormal.png in Resources */,
 				89CC252518EE9EDE00EDEFB8 /* scrollItemBgNormal.png in Resources */,
 				50EF629717ECD46A001EB2F8 /* Icon-58.png in Resources */,
@@ -1002,6 +1030,7 @@
 				89CC254418EE9EE700EDEFB8 /* cai1.lua in Resources */,
 				89CC253C18EE9EE700EDEFB8 /* backNormal.png in Resources */,
 				89CC252218EE9EDE00EDEFB8 /* refreshNormal.png in Resources */,
+				89BC216C18FCF52000C0ED51 /* hit_me.png in Resources */,
 				89CC252E18EE9EDE00EDEFB8 /* YellowSquare.png in Resources */,
 				5087E75517EB910900C73F5D /* HelloWorld.png in Resources */,
 				8947CA2618F2A2020007847E /* thump.wav in Resources */,
@@ -1027,6 +1056,7 @@
 				89CC24EF18EE9ECA00EDEFB8 /* BaseDemo.cpp in Sources */,
 				89CC24F118EE9ECA00EDEFB8 /* ContactFilterScene.cpp in Sources */,
 				8947CA2918F2BE320007847E /* Ball.cpp in Sources */,
+				89BC216718FCF39D00C0ED51 /* HitMeScene.cpp in Sources */,
 				503AE10217EB989F00D1A890 /* RootViewController.mm in Sources */,
 				1AFAF8B716D35DE700DB1158 /* AppDelegate.cpp in Sources */,
 				893313F118FAB14200EA877C /* PointQueryScene.cpp in Sources */,
@@ -1045,6 +1075,7 @@
 				893313F218FAB14200EA877C /* PointQueryScene.cpp in Sources */,
 				89CC250318EE9ED200EDEFB8 /* IntroScene.cpp in Sources */,
 				89CC24F018EE9ECA00EDEFB8 /* BaseDemo.cpp in Sources */,
+				89BC216818FCF39D00C0ED51 /* HitMeScene.cpp in Sources */,
 				8947CA2A18F2BE320007847E /* Ball.cpp in Sources */,
 				89CC250518EE9ED200EDEFB8 /* PinJointScene.cpp in Sources */,
 				5087E75817EB910900C73F5D /* HelloWorldScene.cpp in Sources */,
