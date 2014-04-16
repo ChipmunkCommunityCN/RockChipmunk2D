@@ -45,7 +45,6 @@ bool PRKitDemoScene::init()
     menu->setPosition(Point::ZERO);
     this->addChild(menu, 300);
     
-    //--------------------- START
     Vector2dVector polygonPoints;
     polygonPoints.push_back(Vector2d(100, 100));
     polygonPoints.push_back(Vector2d(200, 100));
@@ -56,7 +55,6 @@ bool PRKitDemoScene::init()
     Texture2D *texture = Director::getInstance()->getTextureCache()->addImage("pattern1.png");
     PRFilledPolygon *filledPolygon = PRFilledPolygon::filledPolygonWithPointsAndTexture(polygonPoints, texture);
     addChild(filledPolygon);
-    //---------------------- END
     
     return true;
 }
