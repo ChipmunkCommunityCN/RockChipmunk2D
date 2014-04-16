@@ -102,6 +102,16 @@
 		89BC216818FCF39D00C0ED51 /* HitMeScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 89BC216518FCF39D00C0ED51 /* HitMeScene.cpp */; };
 		89BC216B18FCF52000C0ED51 /* hit_me.png in Resources */ = {isa = PBXBuildFile; fileRef = 89BC216A18FCF52000C0ED51 /* hit_me.png */; };
 		89BC216C18FCF52000C0ED51 /* hit_me.png in Resources */ = {isa = PBXBuildFile; fileRef = 89BC216A18FCF52000C0ED51 /* hit_me.png */; };
+		89BC21A218FEBF2300C0ED51 /* PRKitDemoScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 89BC21A018FEBF2300C0ED51 /* PRKitDemoScene.cpp */; };
+		89BC21A318FEBF2300C0ED51 /* PRKitDemoScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 89BC21A018FEBF2300C0ED51 /* PRKitDemoScene.cpp */; };
+		89BC21AB18FEC18A00C0ED51 /* PRFilledPolygon.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 89BC21A518FEC18A00C0ED51 /* PRFilledPolygon.cpp */; };
+		89BC21AC18FEC18A00C0ED51 /* PRFilledPolygon.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 89BC21A518FEC18A00C0ED51 /* PRFilledPolygon.cpp */; };
+		89BC21AD18FEC18A00C0ED51 /* PRRatcliffTriangulator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 89BC21A718FEC18A00C0ED51 /* PRRatcliffTriangulator.cpp */; };
+		89BC21AE18FEC18A00C0ED51 /* PRRatcliffTriangulator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 89BC21A718FEC18A00C0ED51 /* PRRatcliffTriangulator.cpp */; };
+		89BC21AF18FEC18A00C0ED51 /* triangulate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 89BC21A918FEC18A00C0ED51 /* triangulate.cpp */; };
+		89BC21B018FEC18A00C0ED51 /* triangulate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 89BC21A918FEC18A00C0ED51 /* triangulate.cpp */; };
+		89BC21B418FED47800C0ED51 /* pattern1.png in Resources */ = {isa = PBXBuildFile; fileRef = 89BC21B318FED47800C0ED51 /* pattern1.png */; };
+		89BC21B518FED47800C0ED51 /* pattern1.png in Resources */ = {isa = PBXBuildFile; fileRef = 89BC21B318FED47800C0ED51 /* pattern1.png */; };
 		89CC24EF18EE9ECA00EDEFB8 /* BaseDemo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 89CC24E918EE9ECA00EDEFB8 /* BaseDemo.cpp */; };
 		89CC24F018EE9ECA00EDEFB8 /* BaseDemo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 89CC24E918EE9ECA00EDEFB8 /* BaseDemo.cpp */; };
 		89CC24F118EE9ECA00EDEFB8 /* ContactFilterScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 89CC24EB18EE9ECA00EDEFB8 /* ContactFilterScene.cpp */; };
@@ -386,6 +396,15 @@
 		89BC216518FCF39D00C0ED51 /* HitMeScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HitMeScene.cpp; sourceTree = "<group>"; };
 		89BC216618FCF39D00C0ED51 /* HitMeScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HitMeScene.h; sourceTree = "<group>"; };
 		89BC216A18FCF52000C0ED51 /* hit_me.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hit_me.png; sourceTree = "<group>"; };
+		89BC21A018FEBF2300C0ED51 /* PRKitDemoScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PRKitDemoScene.cpp; path = ../Classes/PRKitDemoScene.cpp; sourceTree = "<group>"; };
+		89BC21A118FEBF2300C0ED51 /* PRKitDemoScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PRKitDemoScene.h; path = ../Classes/PRKitDemoScene.h; sourceTree = "<group>"; };
+		89BC21A518FEC18A00C0ED51 /* PRFilledPolygon.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PRFilledPolygon.cpp; sourceTree = "<group>"; };
+		89BC21A618FEC18A00C0ED51 /* PRFilledPolygon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRFilledPolygon.h; sourceTree = "<group>"; };
+		89BC21A718FEC18A00C0ED51 /* PRRatcliffTriangulator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PRRatcliffTriangulator.cpp; sourceTree = "<group>"; };
+		89BC21A818FEC18A00C0ED51 /* PRRatcliffTriangulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRRatcliffTriangulator.h; sourceTree = "<group>"; };
+		89BC21A918FEC18A00C0ED51 /* triangulate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = triangulate.cpp; sourceTree = "<group>"; };
+		89BC21AA18FEC18A00C0ED51 /* triangulate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = triangulate.h; sourceTree = "<group>"; };
+		89BC21B318FED47800C0ED51 /* pattern1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pattern1.png; sourceTree = "<group>"; };
 		89CC24E918EE9ECA00EDEFB8 /* BaseDemo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = BaseDemo.cpp; path = ../Classes/BaseDemo.cpp; sourceTree = "<group>"; };
 		89CC24EA18EE9ECA00EDEFB8 /* BaseDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BaseDemo.h; path = ../Classes/BaseDemo.h; sourceTree = "<group>"; };
 		89CC24EB18EE9ECA00EDEFB8 /* ContactFilterScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ContactFilterScene.cpp; path = ../Classes/ContactFilterScene.cpp; sourceTree = "<group>"; };
@@ -500,6 +519,8 @@
 		15AA9C4015B7EC450033D6C2 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				89BC21A418FEC18A00C0ED51 /* PRKit */,
+				89BC219F18FEBEF000C0ED51 /* PRKitDemo */,
 				89BC216218FCF38900C0ED51 /* HitMe */,
 				8947CA5A18F819E80007847E /* SimplePlatformer */,
 				8947CA4D18F6CE0B0007847E /* QueryDemo */,
@@ -636,6 +657,7 @@
 		78C7DDAA14EBA5050085D0C2 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				89BC21B218FED47800C0ED51 /* PRKitDemo */,
 				89BC216918FCF52000C0ED51 /* HitMe */,
 				8947CA5318F819A10007847E /* SimplePlatformer */,
 				8947CA0518F2A2020007847E /* ColorMatch */,
@@ -746,6 +768,36 @@
 				89BC216A18FCF52000C0ED51 /* hit_me.png */,
 			);
 			path = HitMe;
+			sourceTree = "<group>";
+		};
+		89BC219F18FEBEF000C0ED51 /* PRKitDemo */ = {
+			isa = PBXGroup;
+			children = (
+				89BC21A018FEBF2300C0ED51 /* PRKitDemoScene.cpp */,
+				89BC21A118FEBF2300C0ED51 /* PRKitDemoScene.h */,
+			);
+			name = PRKitDemo;
+			sourceTree = "<group>";
+		};
+		89BC21A418FEC18A00C0ED51 /* PRKit */ = {
+			isa = PBXGroup;
+			children = (
+				89BC21A518FEC18A00C0ED51 /* PRFilledPolygon.cpp */,
+				89BC21A618FEC18A00C0ED51 /* PRFilledPolygon.h */,
+				89BC21A718FEC18A00C0ED51 /* PRRatcliffTriangulator.cpp */,
+				89BC21A818FEC18A00C0ED51 /* PRRatcliffTriangulator.h */,
+				89BC21A918FEC18A00C0ED51 /* triangulate.cpp */,
+				89BC21AA18FEC18A00C0ED51 /* triangulate.h */,
+			);
+			path = PRKit;
+			sourceTree = "<group>";
+		};
+		89BC21B218FED47800C0ED51 /* PRKitDemo */ = {
+			isa = PBXGroup;
+			children = (
+				89BC21B318FED47800C0ED51 /* pattern1.png */,
+			);
+			path = PRKitDemo;
 			sourceTree = "<group>";
 		};
 		89CC24F918EE9ED200EDEFB8 /* JointsDemo */ = {
@@ -954,6 +1006,7 @@
 				89CC254518EE9EE700EDEFB8 /* cai1.plist in Resources */,
 				8947CA1918F2A2020007847E /* ball_4.png in Resources */,
 				89CC251D18EE9EDE00EDEFB8 /* goNormal.png in Resources */,
+				89BC21B418FED47800C0ED51 /* pattern1.png in Resources */,
 				5087E78017EB970100C73F5D /* Icon-114.png in Resources */,
 				1AFAF8BE16D35E4900DB1158 /* HelloWorld.png in Resources */,
 				50EF62A217ECD613001EB2F8 /* Icon-29.png in Resources */,
@@ -997,6 +1050,7 @@
 				8947CA5918F819A10007847E /* scroller.tmx in Resources */,
 				8947CA1218F2A2020007847E /* ball_0.png in Resources */,
 				89CC252018EE9EDE00EDEFB8 /* goSelected.png in Resources */,
+				89BC21B518FED47800C0ED51 /* pattern1.png in Resources */,
 				8947CA1618F2A2020007847E /* ball_2.png in Resources */,
 				8947CA2218F2A2020007847E /* pop.plist in Resources */,
 				89CC252C18EE9EDE00EDEFB8 /* tabletop-battles.mp3 in Resources */,
@@ -1050,16 +1104,20 @@
 				89CC250418EE9ED200EDEFB8 /* PinJointScene.cpp in Sources */,
 				8947CA0318F2A0B30007847E /* ColorMatchScene.cpp in Sources */,
 				503AE10017EB989F00D1A890 /* AppController.mm in Sources */,
+				89BC21AD18FEC18A00C0ED51 /* PRRatcliffTriangulator.cpp in Sources */,
 				89CC250A18EE9ED200EDEFB8 /* VisibleRect.cpp in Sources */,
 				89CC250618EE9ED200EDEFB8 /* SlideJointScene.cpp in Sources */,
 				89CC24F318EE9ECA00EDEFB8 /* ContentLayer.cpp in Sources */,
 				89CC24EF18EE9ECA00EDEFB8 /* BaseDemo.cpp in Sources */,
+				89BC21A218FEBF2300C0ED51 /* PRKitDemoScene.cpp in Sources */,
 				89CC24F118EE9ECA00EDEFB8 /* ContactFilterScene.cpp in Sources */,
 				8947CA2918F2BE320007847E /* Ball.cpp in Sources */,
 				89BC216718FCF39D00C0ED51 /* HitMeScene.cpp in Sources */,
+				89BC21AF18FEC18A00C0ED51 /* triangulate.cpp in Sources */,
 				503AE10217EB989F00D1A890 /* RootViewController.mm in Sources */,
 				1AFAF8B716D35DE700DB1158 /* AppDelegate.cpp in Sources */,
 				893313F118FAB14200EA877C /* PointQueryScene.cpp in Sources */,
+				89BC21AB18FEC18A00C0ED51 /* PRFilledPolygon.cpp in Sources */,
 				503AE10117EB989F00D1A890 /* main.m in Sources */,
 				89CC250818EE9ED200EDEFB8 /* RollingBall.cpp in Sources */,
 				1AFAF8B816D35DE700DB1158 /* HelloWorldScene.cpp in Sources */,
@@ -1073,13 +1131,17 @@
 				89CC250918EE9ED200EDEFB8 /* RollingBall.cpp in Sources */,
 				5087E75717EB910900C73F5D /* AppDelegate.cpp in Sources */,
 				893313F218FAB14200EA877C /* PointQueryScene.cpp in Sources */,
+				89BC21B018FEC18A00C0ED51 /* triangulate.cpp in Sources */,
 				89CC250318EE9ED200EDEFB8 /* IntroScene.cpp in Sources */,
 				89CC24F018EE9ECA00EDEFB8 /* BaseDemo.cpp in Sources */,
 				89BC216818FCF39D00C0ED51 /* HitMeScene.cpp in Sources */,
+				89BC21AC18FEC18A00C0ED51 /* PRFilledPolygon.cpp in Sources */,
+				89BC21A318FEBF2300C0ED51 /* PRKitDemoScene.cpp in Sources */,
 				8947CA2A18F2BE320007847E /* Ball.cpp in Sources */,
 				89CC250518EE9ED200EDEFB8 /* PinJointScene.cpp in Sources */,
 				5087E75817EB910900C73F5D /* HelloWorldScene.cpp in Sources */,
 				8947CA6718F819E80007847E /* Player.cpp in Sources */,
+				89BC21AE18FEC18A00C0ED51 /* PRRatcliffTriangulator.cpp in Sources */,
 				89CC24F418EE9ECA00EDEFB8 /* ContentLayer.cpp in Sources */,
 				89CC24F218EE9ECA00EDEFB8 /* ContactFilterScene.cpp in Sources */,
 				8947CA6518F819E80007847E /* SimplePlatformerScene.cpp in Sources */,

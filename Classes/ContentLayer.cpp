@@ -16,6 +16,7 @@
 #include "SimplePlatformerScene.h"
 #include "PointQueryScene.h"
 #include "HitMeScene.h"
+#include "PRKitDemoScene.h"
 
 struct DEMO
 {
@@ -32,6 +33,7 @@ struct DEMO
     { "07 简单的小游戏—SimplePlatformer", [](){ return SimplePlatformerScene::createScene(); } },
     { "08 点查询", [](){ return PointQueryScene::createScene(); } },
     { "09 简单的小游戏-HitMe", [](){ return HitMeScene::createScene(); } },
+    { "10 PRKitDemo", [](){ return PRKitDemoScene::createScene(); } },
 };
 
 Scene* ContentLayer::createScene()
