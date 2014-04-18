@@ -25,6 +25,7 @@ public:
     
     virtual void onEnter() override;
     
+    void toggleDebugCallback(Ref* sender);
     Sprite* createBall(const Point& point, float radius, PhysicsMaterial material = PHYSICSBODY_MATERIAL_DEFAULT);
     Sprite* createBox(const Point& point, Size size, PhysicsMaterial material = PHYSICSBODY_MATERIAL_DEFAULT);
     Sprite* createTriangle(const Point& point, Size size, PhysicsMaterial material = PHYSICSBODY_MATERIAL_DEFAULT);

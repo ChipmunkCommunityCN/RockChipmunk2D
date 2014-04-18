@@ -46,9 +46,13 @@ bool BaseDemo::init()
     auto backMenuItem = MenuItemImage::create("backNormal.png", "backSelected.png", CC_CALLBACK_1(BaseDemo::backCallback, this));
     auto restartMenuItem = MenuItemImage::create("refreshNormal.png", "refreshSelected.png", CC_CALLBACK_1(BaseDemo::restartCallback, this));
     
+    MenuItemFont::setFontSize(18);
+    auto toggleDebugMenuItem = MenuItemFont::create("Toggle debug", CC_CALLBACK_1(BaseDemo::toggleDebugCallback, this));
+    
     restartMenuItem->setPosition(VisibleRect::rightTop() + Point(-200, -80));
     backMenuItem->setPosition(restartMenuItem->getPosition() + Point(90, 0));
-    auto menu = Menu::create(backMenuItem, restartMenuItem, NULL);
+    toggleDebugMenuItem->setPosition(Point(VisibleRect::right().x-50, VisibleRect::top().y-10));
+    auto menu = Menu::create(backMenuItem, restartMenuItem, toggleDebugMenuItem, NULL);
     menu->setPosition(Point::ZERO);
     this->addChild(menu, 300);
     
@@ -185,4 +189,16 @@ void BaseDemo::restartCallback(Ref *pSender)
 void BaseDemo::backCallback(Ref *pSender)
 {
     Director::getInstance()->replaceScene(ContentLayer::createScene());
+}
+
+void BaseDemo::toggleDebugCallback(Ref* sender)
+{
+    if (_world->getDebugDrawMask() == PhysicsWorld::DEBUGDRAW_ALL)
+    {
+        _world->setDebugDrawMask(PhysicsWorld::DEBUGDRAW_NONE);
+    }
+    else
+    {
+        _world->setDebugDrawMask(PhysicsWorld::DEBUGDRAW_ALL);
+    }
 }
