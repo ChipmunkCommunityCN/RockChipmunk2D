@@ -70,7 +70,7 @@ void BaseDemo::onEnter()
 {
     Layer::onEnter();
     
-    auto demo_info_label = Label::create(demo_info(), "Helvetica", 25, Size(500, 200), TextHAlignment::LEFT);
+    auto demo_info_label = Label::create(demo_info(), "Helvetica", 25, Size(1000, 200), TextHAlignment::LEFT);
     this->addChild(demo_info_label);
     demo_info_label->setAnchorPoint(Point(0.0f, 1.0f));
     demo_info_label->setColor(Color3B(255, 255, 255));

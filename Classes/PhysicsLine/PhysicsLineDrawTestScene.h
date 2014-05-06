@@ -32,7 +32,6 @@ public:
     virtual bool onTouchBegan(Touch* touch, Event* event);
     virtual void onTouchMoved(Touch* touch, Event* event);
     virtual void onTouchEnded(Touch* touch, Event* event);
-    virtual void draw(Renderer *renderer, const kmMat4& transform, bool transformUpdated);
     
     bool onContactBegin(PhysicsContact& contact);
     bool onContactPreSolve(PhysicsContact& contact, PhysicsContactPreSolve& solve);
@@ -42,9 +41,14 @@ private:
     Point _prePoint;
     Point _curPoint;
     Segment _segment;
+    PhysicsBody* _shooterBody;
+    PhysicsBody* _targetBody;
+    DrawNode* _canvas;
     std::vector<Segment> _segments;
-    void checkCurPoint(Point& point);
-    void fallBalls(float dt);
+    
+    void drawPath(Point& point);
+    void fireBalls(float dt);
+    void generateTarget();
 };
 
 #endif /* defined(__RockChipmunk2D__PhysicsLineDrawTestScene__) */
