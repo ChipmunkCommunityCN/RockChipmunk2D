@@ -35,6 +35,7 @@ public:
     virtual void onTouchEnded(Touch* touch, Event* event);
 protected:
     PhysicsWorld* _world;
+    LayerColor* _bg;
     Node* _wallNode;
     std::unordered_map<int, Node*> _mouses;
 };

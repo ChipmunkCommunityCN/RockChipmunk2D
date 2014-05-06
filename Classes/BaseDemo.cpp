@@ -22,8 +22,8 @@ bool BaseDemo::init()
     }
     
     Size size = VisibleRect::getVisibleRect().size;
-    auto bg = LayerColor::create(Color4B(125, 125, 125, 255), size.width, size.height);
-    this->addChild(bg);
+    _bg = LayerColor::create(Color4B(125, 125, 125, 255), size.width, size.height);
+    this->addChild(_bg);
     
     auto bg_grid = DrawNode::create();
     int i = 0;
@@ -39,6 +39,7 @@ bool BaseDemo::init()
     //加入封闭的盒子，用作墙壁
     auto body = PhysicsBody::createEdgeBox(size, PHYSICSBODY_MATERIAL_DEFAULT, 3);
     _wallNode = Node::create();
+    body->setGroup(1);
     _wallNode->setPosition(size.width/2, size.height/2);
     _wallNode->setPhysicsBody(body);
     this->addChild(_wallNode);

@@ -18,6 +18,7 @@
 #include "HitMeScene.h"
 #include "PRKitDemoScene.h"
 #include "FruitCutNinjaScene.h"
+#include "PhysicsLineDrawTestScene.h"
 
 struct DEMO
 {
@@ -36,6 +37,7 @@ struct DEMO
     { "09 简单的小游戏-HitMe", [](){ return HitMeScene::createScene(); } },
     { "10 PRKitDemo", [](){ return PRKitDemoScene::createScene(); } },
     { "11 Let's go! 忍者切水果!", [](){ return FruitCutNinjaScene::createScene(); } },
+    { "12 绘制刚体线条", [](){ return PhysicsLineDrawTestScene::createScene(); } },
 };
 
 Scene* ContentLayer::createScene()
