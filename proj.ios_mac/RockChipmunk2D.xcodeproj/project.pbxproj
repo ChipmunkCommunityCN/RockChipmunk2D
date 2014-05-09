@@ -98,6 +98,12 @@
 		8947CA6518F819E80007847E /* SimplePlatformerScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8947CA5E18F819E80007847E /* SimplePlatformerScene.cpp */; };
 		8947CA6618F819E80007847E /* Player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8947CA6018F819E80007847E /* Player.cpp */; };
 		8947CA6718F819E80007847E /* Player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8947CA6018F819E80007847E /* Player.cpp */; };
+		8997F843191C7A75009913C5 /* SpringJointScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8997F841191C7A75009913C5 /* SpringJointScene.cpp */; };
+		8997F844191C7A75009913C5 /* SpringJointScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8997F841191C7A75009913C5 /* SpringJointScene.cpp */; };
+		8997F84C191CC628009913C5 /* PivotJointScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8997F84A191CC628009913C5 /* PivotJointScene.cpp */; };
+		8997F84D191CC628009913C5 /* PivotJointScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8997F84A191CC628009913C5 /* PivotJointScene.cpp */; };
+		8997F84F191CE7BE009913C5 /* rope_texture.png in Resources */ = {isa = PBXBuildFile; fileRef = 8997F84E191CE7BE009913C5 /* rope_texture.png */; };
+		8997F850191CE7BE009913C5 /* rope_texture.png in Resources */ = {isa = PBXBuildFile; fileRef = 8997F84E191CE7BE009913C5 /* rope_texture.png */; };
 		89BC216718FCF39D00C0ED51 /* HitMeScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 89BC216518FCF39D00C0ED51 /* HitMeScene.cpp */; };
 		89BC216818FCF39D00C0ED51 /* HitMeScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 89BC216518FCF39D00C0ED51 /* HitMeScene.cpp */; };
 		89BC216B18FCF52000C0ED51 /* hit_me.png in Resources */ = {isa = PBXBuildFile; fileRef = 89BC216A18FCF52000C0ED51 /* hit_me.png */; };
@@ -807,6 +813,11 @@
 		8947CA5F18F819E80007847E /* SimplePlatformerScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimplePlatformerScene.h; sourceTree = "<group>"; };
 		8947CA6018F819E80007847E /* Player.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Player.cpp; sourceTree = "<group>"; };
 		8947CA6118F819E80007847E /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
+		8997F841191C7A75009913C5 /* SpringJointScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SpringJointScene.cpp; sourceTree = "<group>"; };
+		8997F842191C7A75009913C5 /* SpringJointScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpringJointScene.h; sourceTree = "<group>"; };
+		8997F84A191CC628009913C5 /* PivotJointScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PivotJointScene.cpp; sourceTree = "<group>"; };
+		8997F84B191CC628009913C5 /* PivotJointScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PivotJointScene.h; sourceTree = "<group>"; };
+		8997F84E191CE7BE009913C5 /* rope_texture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rope_texture.png; sourceTree = "<group>"; };
 		89BC216518FCF39D00C0ED51 /* HitMeScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HitMeScene.cpp; sourceTree = "<group>"; };
 		89BC216618FCF39D00C0ED51 /* HitMeScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HitMeScene.h; sourceTree = "<group>"; };
 		89BC216A18FCF52000C0ED51 /* hit_me.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hit_me.png; sourceTree = "<group>"; };
@@ -1293,6 +1304,7 @@
 				8947CA5318F819A10007847E /* SimplePlatformer */,
 				8947CA0518F2A2020007847E /* ColorMatch */,
 				89CC250D18EE9EDE00EDEFB8 /* fonts */,
+				8997F84E191CE7BE009913C5 /* rope_texture.png */,
 				89CC253118EE9EE700EDEFB8 /* backNormal.png */,
 				89CC253218EE9EE700EDEFB8 /* backSelected.png */,
 				89CC253318EE9EE700EDEFB8 /* ball.png */,
@@ -1504,6 +1516,10 @@
 				89CC24FB18EE9ED200EDEFB8 /* PinJointScene.h */,
 				89CC24FC18EE9ED200EDEFB8 /* SlideJointScene.cpp */,
 				89CC24FD18EE9ED200EDEFB8 /* SlideJointScene.h */,
+				8997F841191C7A75009913C5 /* SpringJointScene.cpp */,
+				8997F842191C7A75009913C5 /* SpringJointScene.h */,
+				8997F84A191CC628009913C5 /* PivotJointScene.cpp */,
+				8997F84B191CC628009913C5 /* PivotJointScene.h */,
 			);
 			name = JointsDemo;
 			path = ../Classes/JointsDemo;
@@ -2186,6 +2202,7 @@
 				89E3E34F190F9F2F006E7D9C /* shoot.wav in Resources */,
 				8947CA1518F2A2020007847E /* ball_2.png in Resources */,
 				89E3E313190F9F2F006E7D9C /* level1-hd.png in Resources */,
+				8997F84F191CE7BE009913C5 /* rope_texture.png in Resources */,
 				89E3E2B3190F9F2F006E7D9C /* main-menu-background-hd.png in Resources */,
 				89E3E2FB190F9F2F006E7D9C /* buttons.zss in Resources */,
 				89E3E45B190F9F2F006E7D9C /* sprites.ztp in Resources */,
@@ -2392,6 +2409,7 @@
 				8947CA1A18F2A2020007847E /* ball_4.png in Resources */,
 				89E3E3A6190F9F2F006E7D9C /* spinner.png in Resources */,
 				89BC221D18FEDF1400C0ED51 /* squash.caf in Resources */,
+				8997F850191CE7BE009913C5 /* rope_texture.png in Resources */,
 				89E3E45C190F9F2F006E7D9C /* sprites.ztp in Resources */,
 				89E3E3E0190F9F2F006E7D9C /* walk-up_01.png in Resources */,
 				89E3E368190F9F2F006E7D9C /* sprites-hd.plist in Resources */,
@@ -2475,6 +2493,7 @@
 				89CC250418EE9ED200EDEFB8 /* PinJointScene.cpp in Sources */,
 				8947CA0318F2A0B30007847E /* ColorMatchScene.cpp in Sources */,
 				503AE10017EB989F00D1A890 /* AppController.mm in Sources */,
+				8997F84C191CC628009913C5 /* PivotJointScene.cpp in Sources */,
 				89BC21AD18FEC18A00C0ED51 /* PRRatcliffTriangulator.cpp in Sources */,
 				89CC250A18EE9ED200EDEFB8 /* VisibleRect.cpp in Sources */,
 				89CC250618EE9ED200EDEFB8 /* SlideJointScene.cpp in Sources */,
@@ -2483,6 +2502,7 @@
 				89CC24F118EE9ECA00EDEFB8 /* ContactFilterScene.cpp in Sources */,
 				8947CA2918F2BE320007847E /* Ball.cpp in Sources */,
 				89BC21BA18FED80B00C0ED51 /* PRKitDemoScene.cpp in Sources */,
+				8997F843191C7A75009913C5 /* SpringJointScene.cpp in Sources */,
 				89BC216718FCF39D00C0ED51 /* HitMeScene.cpp in Sources */,
 				89BC21AF18FEC18A00C0ED51 /* triangulate.cpp in Sources */,
 				503AE10217EB989F00D1A890 /* RootViewController.mm in Sources */,
@@ -2501,8 +2521,10 @@
 			files = (
 				89CC250918EE9ED200EDEFB8 /* RollingBall.cpp in Sources */,
 				89BC224818FEDF4C00C0ED51 /* FruitCutNinjaScene.cpp in Sources */,
+				8997F844191C7A75009913C5 /* SpringJointScene.cpp in Sources */,
 				89E853D0191884DA008F98C3 /* PhysicsLineDrawTestScene.cpp in Sources */,
 				5087E75717EB910900C73F5D /* AppDelegate.cpp in Sources */,
+				8997F84D191CC628009913C5 /* PivotJointScene.cpp in Sources */,
 				893313F218FAB14200EA877C /* PointQueryScene.cpp in Sources */,
 				89BC21B018FEC18A00C0ED51 /* triangulate.cpp in Sources */,
 				89CC250318EE9ED200EDEFB8 /* IntroScene.cpp in Sources */,
