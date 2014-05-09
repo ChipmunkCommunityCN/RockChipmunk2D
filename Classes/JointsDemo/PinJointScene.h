@@ -3,8 +3,8 @@
 //  PhysicsTest
 //
 //  Created by ChildhoodAndy on 14-3-11.
-//
-//
+//  PhysicsJointDistance(cocos2dx)
+//  cpPinJoint
 
 #ifndef __PhysicsTest__PinJointScene__
 #define __PhysicsTest__PinJointScene__

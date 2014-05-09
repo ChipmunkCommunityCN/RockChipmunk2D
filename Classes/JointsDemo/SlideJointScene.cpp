@@ -3,8 +3,8 @@
 //  RockChipmunkWithCocos2DX
 //
 //  Created by ChildhoodAndy on 14-3-14.
-//
-//
+// 【说明】这里的SlideJoint指的是Chipmunk中的cpSlideJoint
+//        cocos2dx对此关节的封装名为PhysicsJointLimit
 
 #include "SlideJointScene.h"
 

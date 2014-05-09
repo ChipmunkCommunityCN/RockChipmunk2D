@@ -19,7 +19,8 @@
 #include "PRKitDemoScene.h"
 #include "FruitCutNinjaScene.h"
 #include "PhysicsLineDrawTestScene.h"
-
+#include "SpringJointScene.h"
+#include "PivotJointScene.h"
 struct DEMO
 {
     const std::string demo_name;
@@ -30,14 +31,16 @@ struct DEMO
     { "02 构建一个物理世界2", [](){ return RollingBall::createScene(); } },
     { "03 了解PinJoint【销关节】", [](){ return PinJoint::createScene(); } },
     { "04 了解SlideJoint【滑动关节】", [](){ return SlideJoint::createScene(); } },
-    { "05 了解碰撞过滤", [](){ return ContactFilterScene::createScene(); } },
-    { "06 简单的小游戏—ColorMatch", [](){ return ColorMatchScene::createScene(); } },
-    { "07 简单的小游戏—SimplePlatformer", [](){ return SimplePlatformerScene::createScene(); } },
-    { "08 点查询", [](){ return PointQueryScene::createScene(); } },
-    { "09 简单的小游戏-HitMe", [](){ return HitMeScene::createScene(); } },
-    { "10 PRKitDemo", [](){ return PRKitDemoScene::createScene(); } },
-    { "11 Let's go! 忍者切水果!", [](){ return FruitCutNinjaScene::createScene(); } },
-    { "12 绘制刚体线条", [](){ return PhysicsLineDrawTestScene::createScene(); } },
+    { "05 了解SpringJoint【阻尼弹簧关节】", [](){ return SpringJointScene::createScene(); } },
+    { "06 了解PivotJoint【枢轴关节】", [](){ return PivotJointScene::createScene(); } },
+    { "07 了解碰撞过滤", [](){ return ContactFilterScene::createScene(); } },
+    { "08 简单的小游戏—ColorMatch", [](){ return ColorMatchScene::createScene(); } },
+    { "09 简单的小游戏—SimplePlatformer", [](){ return SimplePlatformerScene::createScene(); } },
+    { "10 点查询", [](){ return PointQueryScene::createScene(); } },
+    { "11 简单的小游戏-HitMe", [](){ return HitMeScene::createScene(); } },
+    { "12 PRKitDemo", [](){ return PRKitDemoScene::createScene(); } },
+    { "13 Let's go! 忍者切水果!", [](){ return FruitCutNinjaScene::createScene(); } },
+    { "14 绘制刚体线条", [](){ return PhysicsLineDrawTestScene::createScene(); } },
 };
 
 Scene* ContentLayer::createScene()
